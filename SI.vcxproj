@@ -77,8 +77,7 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <LinkIncremental>
-    </LinkIncremental>
+    <LinkIncremental>true</LinkIncremental>
     <IncludePath>$(VC_IncludePath)ucrt;$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSDK_IncludePath);API;API\Particles;API\Textures;include;lib\assimp\include\assimp;lib\fmod;lib\glm;lib\HRT;lib\LiteHTML;lib\OpenGL;lib\OpenGL\GL\include\GL;lib\RT-DESK\user;lib\RT-DESK\include;lib\sdl;lib\UGK\include;lib\UGK\include\AI;lib\UGK\include\CollisionDetect;lib\UGK\include\Graphics\OpenGL;lib\UGK\include\Graphics\Window;lib\UGKHW\include;lib\UGKHW\include\Kinect;lib\UGKHW\include\Leap;lib\UGKHW\include\WiiMote;lib\UGK\include\Language;lib\UGK\include\Meshes;lib\UGK\include\ObjectsManager;lib\UGK\include\Particles;lib\UGK\include\Physics;lib\UGK\include\Parsers;lib\UGK\include\Texture;lib\UGK\include\Sound;lib\UGK\include\SceneGraph;lib\OSG\include</IncludePath>
     <ReferencePath>lib\OpenGL\GLEW\glew-1.8.0 win64\lib;lib\OpenGL\Glee;$(VCInstallDir)atlmfc\lib;$(VCInstallDir)lib;lib\UGK\lib\lib;$(ReferencePath)</ReferencePath>
     <LibraryPath>$(VCInstallDir)lib;$(WindowsSDK_LibraryPath_x86);$(VC_LibraryPath_x86);lib\RT-DESK;lib\OpenGL\GL\lib;lib\UGK\lib\lib;lib\SDL;lib;lib\OpenGL\GLEW\lib;lib\assimp-3.0.1270\lib;lib\OpenGL\Glee;$(VCInstallDir)atlmfc\lib;lib\OSG;lib\UGKHW;$(VCToolsInstallDir)atlmfc\lib\x86</LibraryPath>
