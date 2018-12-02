@@ -1,6 +1,8 @@
 #ifndef __glut_h__
 #define __glut_h__
 
+#pragma warning (disable:4505)
+
 /* Copyright (c) Mark J. Kilgard, 1994, 1995, 1996, 1998. */
 
 /* This program is freely distributable without licensing fees  and is
@@ -483,6 +485,7 @@ GLUTAPI void APIENTRY glutInit(int *argcp, char **argv);
 #if defined(_WIN32) && !defined(GLUT_DISABLE_ATEXIT_HACK)
 GLUTAPI void APIENTRY __glutInitWithExit(int *argcp, char **argv, void (__cdecl *exitfunc)(int));
 #ifndef GLUT_BUILDING_LIB
+#pragma warning (disable:4505)
 static void APIENTRY glutInit_ATEXIT_HACK(int *argcp, char **argv) { __glutInitWithExit(argcp, argv, exit); }
 #define glutInit glutInit_ATEXIT_HACK
 #endif

@@ -9,6 +9,8 @@
 
 #ifndef UGKCSM_SOUND
 #define UGKCSM_SOUND
+#pragma warning (disable:4018)
+
 
 #include <UGKAudioHardware.h>
 #include <UGKSound.h>

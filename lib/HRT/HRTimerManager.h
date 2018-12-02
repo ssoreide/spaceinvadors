@@ -18,6 +18,9 @@
 #ifndef HRTIMERM_H
 #define HRTIMERM_H
 
+#pragma warning (disable:4251)
+
+
 #include <vector>
 #include <HRTimer.h>
 

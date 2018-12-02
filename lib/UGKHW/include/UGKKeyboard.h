@@ -468,7 +468,7 @@ namespace UGK
 		///Keys pressed down at any given time
 		CK_ACTION_LIST ActivActions;	///<When a key is released, it is removed from this list of pressed keys. It passes to be inactive
 
-		inline void			SetConfigFolder(UGKS_String folder) { this->folder = folder; }
+		inline void			SetConfigFolder(UGKS_String _folder) { this->folder = _folder; }
 		inline UGKS_String	GetConfigFolder()					{ return folder; }
 
 		inline void SetConfigurationFile(UGKS_String path) { MapConfigurationFile = path; }	///<Sets the keyboard map configuration file path

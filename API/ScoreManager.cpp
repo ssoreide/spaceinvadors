@@ -52,7 +52,7 @@ int CScoresManager::GetHiscore()
 		RegCreateKeyEx(HKEY_LOCAL_MACHINE, LPWSTR("SOFTWARE\\SpaceInvaders-OpenGL\\"), 0, UGKS_EMPTY_LPWSTR, REG_OPTION_NON_VOLATILE, KEY_ALL_ACCESS, NULL, &key, &disposition);
 		return 0;
 	}
-	RegCloseKey(key);
+//	RegCloseKey(key);
 }
 
 ///Sets the highest score

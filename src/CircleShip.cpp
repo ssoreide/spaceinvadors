@@ -241,8 +241,8 @@ void CCircleShip::ChangeRenderMode(CHAR_RENDER_MODE Mode)
 void CCircleShip::Render()
 {
 	HRT_Timems RenderPeriod = Timer[CCS_RND_PERIOD].GetAlarmPeriodms();
-	GLboolean	Blending = glIsEnabled(GL_BLEND),
-				Alpha = glIsEnabled(GL_ALPHA_TEST);
+	GLboolean	Blending = glIsEnabled(GL_BLEND);
+	//,Alpha = glIsEnabled(GL_ALPHA_TEST);
 
 #ifdef XM_RND_TIME_DISC
 	TimerManager.GetTimer(SIGLBT_RENDER_TIMING)->InitCounting();

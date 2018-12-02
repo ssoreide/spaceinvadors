@@ -10,6 +10,9 @@
 #ifndef UGKALG_ALGEBRA
 #define UGKALG_ALGEBRA
 
+#pragma warning (disable:4201)
+#pragma warning (disable:4251)
+
 //UGKALG_MATRIX_SIZE = UGKALG_DIMENSIONS x UGKALG_DIMENSIONS
 #define UGKALG_MATRIX_SIZE 16
 

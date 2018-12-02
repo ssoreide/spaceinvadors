@@ -10,6 +10,7 @@
 #include <SITexturesResources.h>
 #include <UGKTexturesManager.h>
 #include <GameCharacters.h>
+#pragma warning (disable:4305)
 
 using namespace UGK;
 

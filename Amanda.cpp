@@ -224,7 +224,7 @@ void CAmanda::Collided(CCharacter *CollidedChar)
 					Explosion.Activate();
 					//OutEvent(CA_BURST); //v 2->3
 
-					RTDESK_CMsg *Msg = GetMsgToFill(UMSG_MSG_BASIC_TYPE);
+					Msg = GetMsgToFill(UMSG_MSG_BASIC_TYPE);
 					SendMsg(Msg, Directory[CHARS_GAME_REF], RTDESKT_INMEDIATELY);
 
 					//OutEvent(CA_DIE); //v 3->4

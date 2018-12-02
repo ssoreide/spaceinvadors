@@ -106,7 +106,7 @@ void CBonusManager::SetQTRoot(QuadtreeRoot *QTR)
 
 CBonusManager::CBonusManager()
 {
-	unsigned int b;	//Bonuses iterator
+//	unsigned int b;	//Bonuses iterator
 
 	msgUpd = RTDM_NO_MSG;
 	Init();

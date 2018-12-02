@@ -470,6 +470,7 @@
     <None Include="Levels\Level_6.html">
       <Filter>Resource Files\Levels</Filter>
     </None>
+    <None Include=".gitignore" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="SI.rc">

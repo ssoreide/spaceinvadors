@@ -33,7 +33,7 @@ void cHRTimer::UpdateMinMax()
 			MinPartial = LastPeriod;
 }
 
-void cHRTimer::ResetSamplingFrequency(HRTM_SF *SF)
+void cHRTimer::ResetSamplingFrequency(HRTM_SF *_SF)
 {
 	if (HRT_ACTIVE == State)
 	{
@@ -44,5 +44,5 @@ void cHRTimer::ResetSamplingFrequency(HRTM_SF *SF)
 		//Reset accumulated
 		Accumulated = HRT_NOTIME;
 	}
-	SetSF(SF);
+	SetSF(_SF);
 }

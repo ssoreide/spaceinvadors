@@ -928,9 +928,9 @@ CTextureAnimation *aniAux;
 			case CHARS_CIRCLESHIP:
 			case CHARS_BACKGROUND:
 				break;
-			case UGK_CHARACTER_UNKNOWN:
-				TagError(rText);
-				break;
+//			case UGK_CHARACTER_UNKNOWN:
+//				TagError(rText);
+//				break;
 			};
 			break;
 		case ANIMATION2D:

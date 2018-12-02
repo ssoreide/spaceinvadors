@@ -8,6 +8,7 @@
 
 #ifndef CHAR_INITIALIZATION /// Macro character is erased
 #define CHAR_INITIALIZATION /// Macro character is defined
+#pragma warning (disable:4458)
 
 #include <UGKSound.h>
 #include <FSM.h>

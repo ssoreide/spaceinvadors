@@ -68,7 +68,7 @@ public:
 	bool		Create(int LeftUpX, int LeftUpY, int Width, int Height, int bitsPerPixel, UGKS_String title, int arbMultisampleFormat, bool arbMultisampleSupported, bool Antialiasing, int AntialiasingMode);
 	inline void Show()								{ ShowWindow(hWnd, CmdShow); UpdateWindow(hWnd); }
 
-	inline void	SetId(int App, int Icon, int Title)	{ IdApp = App; IdIcon = Icon;	IdTitle = Title; }
+	inline void	SetId(int _App, int _Icon, int _Title)	{ IdApp = _App; IdIcon = _Icon;	IdTitle = _Title; }
 	inline void SetWndProc(WNDPROC Proc)			{ WndProc = Proc; }
 	inline void SetCmdShow(int CommandShow)			{ CmdShow = CommandShow; }
 	inline void SetDeskTop(CDeskTop *DT)			{ DeskTop = DT; }

@@ -11,6 +11,7 @@
 #include <UGKTexturesManager.h>
 #include <GameCharacters.h>
 #include <SITexturesResources.h>
+#pragma warning (disable:4238)
 
 UGKS_String CBNK_TypeNames[CBNK_MAXTYPE] =
 {

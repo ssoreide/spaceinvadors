@@ -7,6 +7,9 @@ Prefix: CI_
 In this file all the functions of interface (display windows) player
 */
 
+#pragma warning (disable:4840)
+
+
 #include <GUI.h>
 #include <GUIGadget.h>
 #include <SIGame.h>
@@ -279,7 +282,7 @@ void CGUI::DisplayRing2D23D()
 		y = Players[CurrentPlayer]->Position.v[YDIM] + Players[CurrentPlayer]->yi;
 		z = Players[CurrentPlayer]->Position.v[ZDIM];
 
-		float tx = 0;
+//		float tx = 0;
 
 		// cercle game 2D
 		if (CHAR_2D == Game->RenderMode)
@@ -764,12 +767,12 @@ void CGUI::DisplayConsole()
 
 																												// INPUT UTILISATEUR (LA LIGNE DE COMMANDE)
 																												// input ligne 1
-	char temp[21];
+	char temp2[21];
 	char line1[21];
-	strncpy(temp, Console.Text[Console.Line], CGUI_MAX_CONSOLE_MSG_COLS);
-	temp[CGUI_MAX_CONSOLE_MSG_COLS] = '\0';
+	strncpy(temp2, Console.Text[Console.Line], CGUI_MAX_CONSOLE_MSG_COLS);
+	temp2[CGUI_MAX_CONSOLE_MSG_COLS] = '\0';
 	strcpy(line1, ">");
-	strcat(line1, temp);
+	strcat(line1, temp2);
 
 	// cursor parpadeante
 	double integer;
@@ -1325,9 +1328,9 @@ int FadingInAnimation()
 ///Renders the whole GUI after all the game scene is rendered
 void CGUI::Render(void)
 {
-	unsigned int posX, posY;
+//	unsigned int posX, posY;
 	cTextoGL txtFPS, txtRND, txtUPD, txtIDL, txtSUM, txtCP, txtRTDSKMM;
-	char Text[50];
+//	char Text[50];
 
 	Blending = glIsEnabled(GL_BLEND),
 		Alpha = glIsEnabled(GL_ALPHA_TEST);

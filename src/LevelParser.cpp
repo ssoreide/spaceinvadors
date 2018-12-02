@@ -1095,7 +1095,8 @@ void CLevelReader::Characters(const UGKS_String &rText, DWORD dwAppData, bool &b
 			CLeP_CharType = (GCHARS_CharacterType)CharacterFactory->Lexeme2Token(msg);
 			switch (CLeP_CharType)
 			{
-			case CHARS_AMANDA:				skrivTekst("Amanda ble brukt i clep_chartype");
+			case CHARS_AMANDA:
+				skrivTekst("Amanda ble brukt i clep_chartype");
 
 				Amanda = (CAmanda*)CharacterPool->get(CHARS_AMANDA, CA_NO_AMANDA);
 				*Amanda = *defaultAmanda;

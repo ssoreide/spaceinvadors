@@ -17,6 +17,8 @@
 #ifndef HRTIMER_H
 #define HRTIMER_H
 
+#pragma warning (disable:4251)
+
 #include <RTTimer.h>
 
 #define HRT_Time	RTT_Time

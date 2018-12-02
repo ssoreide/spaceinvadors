@@ -18,6 +18,9 @@
 //#define FONT_LIB_DEBUG /* un-comment for debug regions */
 #include "glTexFont.h"
 
+#pragma warning (disable:4244)
+
+
 /* just a global for our default colors */
 float white[] = {1.0, 1.0, 1.0, 1.0};
 float gray[] = {0.5, 0.5, 0.5, 1.0};
@@ -415,7 +418,7 @@ void fontWalkString (char *buffPtr, int xpos, int ypos, int *vPort)
 void fontDrawString(int xpos, int ypos, UGKS_String s, ...)
 {
 	va_list	msg;
-    wchar_t* buffer;
+    wchar_t buffer[1024];
 	char buffer2[1024];
     GLint vPort[4];
 	

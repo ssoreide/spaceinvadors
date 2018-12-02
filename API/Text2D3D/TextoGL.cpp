@@ -62,7 +62,7 @@ void cTextoGL::setEscalado(GLfloat x, GLfloat y, GLfloat z){
 	escalado.z = z;
 }
 
-void cTextoGL::text2D_draw(unsigned int x, unsigned int y, char* text, int anchoVentana, int altoVentana, GLfloat *color)
+void cTextoGL::text2D_draw(unsigned int x, unsigned int y, char* text, int anchoVentana, int altoVentana, GLfloat *_color)
 {
 	//glPushAttrib(GL_DEPTH_BUFFER_BIT | GL_ENABLE_BIT);
 	//glDisable(GL_LIGHTING);
@@ -79,11 +79,11 @@ void cTextoGL::text2D_draw(unsigned int x, unsigned int y, char* text, int ancho
 
 	//glPushMatrix();
 	//glLoadIdentity();
-	if (color==NULL) {
+	if (_color==NULL) {
 		GLfloat red[3]={1.0f, 0.0f, 0.0f};
 		glColor3fv(red);
 	} else
-		glColor3fv(color);
+		glColor3fv(_color);
 	glRasterPos2f(x, altoVentana-y);
 	while (*text) 
 		glutBitmapCharacter(GLUT_BITMAP_HELVETICA_18, *text++);

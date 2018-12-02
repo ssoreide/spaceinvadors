@@ -79,7 +79,7 @@
 			inline CCharacter* Next()
 			{ 
 				currentCharacter++; 
-				if (currentCharacter >= RootNode.size())
+				if (currentCharacter >= (int)RootNode.size())
 				{
 					currentCharacter = RootNode.size()-1;
 					return NULL;
@@ -92,7 +92,7 @@
 			* @fn: CCharacter* Object(int index)
 			* Returns the element number "index" from the scene graph. If it is past the end of the scenegraph or previous to the beginning, null is returned
 			*/
-			inline CCharacter* Object(int index) { if (index<0 || index > Size()) return NULL; else return RootNode[index];}
+			inline CCharacter* Object(int index) { if (index<0 || index > (int)Size()) return NULL; else return RootNode[index];}
 
 		};
 	}

@@ -18,6 +18,8 @@
 #ifndef RTTIMER_H
 #define RTTIMER_H
 
+#pragma warning (disable:4244)
+
 #include <OS.h>
 
 //#define RTT_MM_COUNTERS

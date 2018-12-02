@@ -9,6 +9,8 @@
 #ifndef CSHD_SHADER
 #define CSHD_SHADER
 
+#pragma warning (disable:4091)
+#pragma warning (disable:4505)
 
 #include <vector>
 #include <UGKString.h>
