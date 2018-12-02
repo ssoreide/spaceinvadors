@@ -1096,7 +1096,7 @@ void CLevelReader::Characters(const UGKS_String &rText, DWORD dwAppData, bool &b
 			switch (CLeP_CharType)
 			{
 			case CHARS_AMANDA:
-				skrivTekst("Amanda ble brukt i clep_chartype");
+//				skrivTekst("Amanda ble brukt i clep_chartype");
 
 				Amanda = (CAmanda*)CharacterPool->get(CHARS_AMANDA, CA_NO_AMANDA);
 				*Amanda = *defaultAmanda;
