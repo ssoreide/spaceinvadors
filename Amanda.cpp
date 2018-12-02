@@ -219,7 +219,9 @@ void CAmanda::Collided(CCharacter *CollidedChar)
 
 				if (Health <= 0)
 				{
-					Sound[CN_EXPLOSION_SND]->Play(UGKSND_VOLUME_80);
+					if (Sound.size() > CN_EXPLOSION_SND) {
+						Sound[CN_EXPLOSION_SND]->Play(UGKSND_VOLUME_80);
+					}
 					Explosion.Init(this, RenderPeriod);
 					Explosion.Activate();
 					//OutEvent(CA_BURST); //v 2->3
