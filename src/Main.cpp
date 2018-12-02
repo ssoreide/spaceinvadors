@@ -319,7 +319,7 @@ int APIENTRY _tWinMain(_In_ HINSTANCE hInstance,
 	Application.hInstance = hInstance;	// Saves the Application Instance instance id into the corresponding attribute in the application singleton
 
 	//Update Application Window attributes
-	Application.Window.setWindowMetadata(Application.Name, Game->initialWidthW, Game->initialHeightW, 16, true, true);
+	Application.Window.setWindowMetadata(Application.Name, Game->initialWidthW, Game->initialHeightW, 16, false, false);
 	Application.Window.SetName(Application.Name);
 	Application.Window.SetTitle(Application.Name);
 	Application.Window.hInstance=	Application.hInstance;
