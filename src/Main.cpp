@@ -27,6 +27,8 @@
 #include <CommCtrl.h>
 #include <fstream>
 
+#include <utils/DebugLog.h>
+
 #define WM_TOGGLEFULLSCREEN (WM_USER+1)		// Application Message For Toggling Fullscreen
 #define MAX_LOADSTRING 100
 
@@ -307,7 +309,9 @@ int APIENTRY _tWinMain(_In_ HINSTANCE hInstance,
 	
 	UGKS_String		temp;
 	bool			firstTime=true;
-		
+
+	DebugLog("Hello, the game is starting now\n");
+
 	hInstance_tmp = hInstance;
 	Application.LanguageFolder = "pepe";
 	CharacterFactory = new CSICharactersFactory();
@@ -351,7 +355,7 @@ int APIENTRY _tWinMain(_In_ HINSTANCE hInstance,
 		case CA_APP_INIT:
 				temp = Game->GetTitle();
 				temp += " [Start]";
-				OutputDebugString(UGKS_string2LPCWSTR(temp));
+//				OutputDebugString(UGKS_string2LPCWSTR(temp));
 
 				// Get the resolution for "Quick FullScreen" mode
 				if (Application.Window.quickFullScreen == TRUE && Application.Window.FullScreen == FALSE)// If Quick Fullscreen, we catch the screen resolution

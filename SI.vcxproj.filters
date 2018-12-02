@@ -88,6 +88,9 @@
     <Filter Include="Source Files\Space Invaders\Parsers">
       <UniqueIdentifier>{b0e30bcb-7974-49aa-9ac1-510fcb40e534}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Space Invaders\utils">
+      <UniqueIdentifier>{cd58f3e9-be17-4148-a92e-56fc72fe1017}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -421,6 +424,9 @@
     </ClCompile>
     <ClCompile Include="src\LevelParser.cpp">
       <Filter>Source Files\Space Invaders\Characters</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\DebugLog.cpp">
+      <Filter>Source Files\Space Invaders\utils</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

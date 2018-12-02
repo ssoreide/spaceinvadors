@@ -379,6 +379,7 @@
     <ClCompile Include="src\SISceneGraph.cpp" />
     <ClCompile Include="src\SITexturesResources.cpp" />
     <ClCompile Include="src\SupplyShip.cpp" />
+    <ClCompile Include="utils\DebugLog.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="images\icon_app.ico" />
